@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+	<link rel="icon" type="image/png" href="logo.png">
+		<title>Welcome</title>
+		<link rel="stylesheet" href="nav bar.css">
+		<link rel="stylesheet" href="calc.css">
+		
+	</head>
+	<body>
+		<div class="main">
+			<nav>
+				<div class="logo-region">
+					<img src="logo.png" alt="logo">
+					<h1>MIVA OPEN UNIVERSITY</h1>
+				</div>
+				<div class="item-region">
+					<ul class="sidebar">
+						<li onclick=hidesidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contact</a></li>
+						<li onclick=showsidebar()><a href="<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>"></a></li>
+					</ul>
+				</div>
+			</nav>
+			<main>
+				<h1 class="big-text"> CALCULATOR</h1>
+				<div class="calculator">
+					<input type="text" id="display"readonly>
+					<div class="keys">
+						<button onclick="appendToDisplay('+')" class="big">+</button>
+						<button onclick="appendToDisplay('1')">1</button>
+						<button onclick="appendToDisplay('2')">2</button>
+						<button onclick="appendToDisplay('3')">3</button>
+						<button onclick="appendToDisplay('-')" class="big">-</button>
+						<button onclick="appendToDisplay('4')">4</button>
+						<button onclick="appendToDisplay('5')">5</button>
+						<button onclick="appendToDisplay('6')">6</button>
+						<button onclick="appendToDisplay('*')" class="big">*</button>
+						<button onclick="appendToDisplay('7')">7</button>
+						<button onclick="appendToDisplay('8')">8</button>
+						<button onclick="appendToDisplay('9')">9</button>
+						<button onclick="appendToDisplay('/')" class="big">/</button>
+						<button onclick="appendToDisplay('.')">.</button>
+						<button onclick="clearDisplay('AC')">AC</button>
+						<button onclick="calculate('=')">=</button>
+					</div>
+				</div>
+			</main>
+			
+			<main>
+				<body>
+		<form>
+			<table>
+				<tr>
+					<td>
+						Name :
+					</td>
+					<td>
+						<input type="text"  placeholder="NAME" name="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Password :
+					</td>
+					<td>
+						<input type="Password" placeholder="PASSWORD" name="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Gender :
+					</td>
+					<td>
+						<input type="radio" name="Gender">Male
+						<input type="radio" name="Gender">Female
+					</td>
+				</tr>
+				<tr>
+					<td>
+					EMAIL
+					</td>
+					<td>
+						<input type="EMAIL" placeholder="EMAIL" name="">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone no :
+					</td>
+					<td>
+						<select>
+							<option>+234</option>
+							<option>+977</option>
+						</select>
+						<input type="Phone" placeholder="070*****" name="">
+	
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="Submit" value="Submit" name="">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+			</main>
+		</div>
+		<script>
+		function appendToDisplay(input){
+			display.value += input;
+		}
+			
+		function clearDisplay(){
+			display.value ="";
+		}
+		
+		function calculate(){
+			try{
+				display.value= eval(display.value);
+			}
+			catch(error){
+				display.value="Error";
+			}
+			}
+	</script>
+	
+	<script>
+		function showsidebar(){
+			const sidebar= document.querySelector('.sidebar')
+			sidebar.style.display='flex'
+		}
+		function hidesidebar(){
+			const sidebar= document.querySelector('.sidebar')
+			sidebar.style.display='none'
+		}
+	</script>
+	</body>
+</html>

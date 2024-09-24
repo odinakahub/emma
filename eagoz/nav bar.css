@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	
+	box-sizing: border-box;
+	background-image: url("miva.jpg");
+	background-size: cover;
+	font-family: 'algerian', 'tahoma';
+}
+nav{
+	background-color: tomato;
+	display: flex;
+	justify-content: space-between;
+}
+img{
+	height: 50px;
+	
+}
+.logo-region{
+	display: flex;
+	
+}
+h1{
+	padding: 10px 0 10px 10px;
+	color:white;
+}
+ul{
+	display: flex;
+	justify-content: space-between;
+
+	
+}
+li{
+	display: flex;
+	padding: 5px 30px 5px 30px;
+	align-items: center;
+	height: 50px;
+		
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+li:hover{
+	background-color: blue;
+}
+main{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.big-text{
+	font-size: 4rem;
+	padding: 0 0 0 30px;
+	color: tomato;
+	text-align: center;
+}
+.sidebar{
+	position: fixed;
+	top:0;
+	right:0;
+	width:250px;
+	z-index:999;
+	background-color:tomato;
+	backdrop-filter:blur (10px);
+	box-shadow: 10px 0 10px;
+	display:none;	
+	flex-direction:column;
+	align-item: flex-start;
+	justify-content:flex-start;
+	
+	
+}
+.sidebar li{
+	width:100%
+}
+.sidebar a{
+	width:100%;
+}
