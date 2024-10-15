@@ -1,0 +1,197 @@
+@media only screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+       
+    }
+    body {
+        background-color: white;
+        width: 480px;
+        height: 800px;
+    }  
+    header{
+        height:20%;
+        background-color: white;
+        box-shadow: -9px px 2px black;
+        display: block;
+        width: 100%;
+    }
+    .absolute{
+        width: 320px;
+    }
+    .right img{
+        height: 10vh;
+    }
+    .right{
+        display: flex;
+        h1{
+            margin-top: 15px;
+            color: grey;
+        }
+    }
+    .left img{
+        height: 8vh;
+    }
+
+    .first{
+        display: flex;
+        justify-content: space-between;
+    }
+    .second-ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        padding: 20px;
+      
+    }
+    li{
+        list-style: none;
+       
+    }
+    a{
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: grey;
+    }
+   
+    .section{
+        border: blur 2px;
+       
+        height: 15vh;
+        
+    }
+    .bar img{
+        height: 30px;
+        margin-right: 20ox;
+    }
+    .bar{
+        display: flex;
+        margin-left: 30px;
+    }
+    .bar-text{
+        disply:block;
+        
+    }
+    .logo img{
+        height: 50px;
+    }
+    .bar-text{
+        margin-left: 30px;
+        margin-right: 140px;
+        align-items: center;
+    }
+    h1{
+        color: orange;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2{
+        color: rgb(53, 51, 51);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    h6{
+        color: rgb(80, 79, 79);
+    }
+    .icons img{
+        height: 20px;
+        margin-right: 30px;
+        margin-left: 37px;
+        padding-top: 10px;
+
+    }
+    footer{
+        background-color: white;
+        box-shadow: 2px -2px 3px rgb(223, 217, 217);
+        height: 15vh;
+        width:100%;
+        padding-bottom: 0;
+    
+    }
+    .write-up-ul{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    write-up li{
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    button{
+        height: 12vh;
+        width:12vh;
+        border-radius: 50%;
+ 
+        background-image: url('random.png');
+        box-shadow: 0px 9px 50px gray;
+        border: none;
+    }
+    .B{
+        background-image: url('images/');
+    }
+   .random img{
+       height: 20vh;
+       padding-top: 3px;
+       margin-bottom: 20px;
+       
+    }
+     .random{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+        position: absolute;
+        right: 0;
+        left: 65vh;
+        top: auto;
+    }
+    .player{
+        border: blur 2px;
+        box-shadow: 2px -4px 5px rgb(224, 216, 216);
+        height: 13vh;
+        
+    }
+    .player-bar{
+        display: flex;
+        margin-left: 30px;
+       
+    }
+    .player-bar img{
+            height: 30px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        
+           
+        
+        .bar-text{
+            disply:block;
+            
+        }
+        .logo img{
+            height: 50px;
+        }
+        .bar-text{
+            margin-left: 30px;
+            margin-right: 140px;
+            align-items: center;
+    }
+    .ending{
+        display: flex;
+        align-items: center;
+        h5{
+            margin-right: 30px;
+        }
+        img{
+            margin-right: 30px;
+        }
+    }
+    .omega{
+        position: absolute;
+       top: 120%;
+       
+    }
+
+}
